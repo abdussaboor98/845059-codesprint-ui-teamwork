@@ -1,14 +1,3 @@
-let formIsValid = false;
-
-function toggleButtonState() {
-    let button = document.getElementById("placeOrderBtn");
-    if (formIsValid) {
-        button.disabled = false;
-    } else {
-        button.disabled = true;
-    }
-}
-
 function checkOnlyText(ele) {
     let string = new String(ele.value);
     let id = new String(ele.id);
@@ -17,13 +6,10 @@ function checkOnlyText(ele) {
     if (string.match("[a-zA-Z]+") && !string.match("[0-9]+")) {
         console.log('valid');
         errMsg.style.display = "none";
-        formIsValid = true;
-        toggleButtonState();
     }
     else {
         console.log('invalid');
         errMsg.style.display = "block";
-        disableButton();
     }
 }
 
@@ -35,21 +21,10 @@ function limitPaise(ele) {
     let errMsg = document.getElementById("limitError");
     if (ele.value > 100 || ele.value < 0) {console.log("here");
         errMsg.style.display = "block";
-        disableButton();
     }
     else {
         errMsg.style.display = "none";
-
     }
-}
-
-function disableButton() {
-    formIsValid = false;
-    toggleButtonState();
-}
-function enableButton() {
-    formIsValid = true;
-    toggleButtonState();
 }
 
 function phoneDigit1(event) {
