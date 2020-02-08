@@ -89,7 +89,7 @@
         </aside>
         
         <main>
-            <form action="">
+            <form onsubmit="submitForm()"">
                 <div class="container-fluid">
                     <h2 class="display-4 mt-5 mb-5" style="color:purple;">Place your order</h2>
                     <div class="form-row">
@@ -213,7 +213,7 @@
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
                     </div>
-                    <button type="submit" id="placeOrderBtn" class="btn btn-danger btn-block mb-3" onclick="submitForm()">Place Order</button>
+                    <button type="submit" id="placeOrderBtn" class="btn btn-danger btn-block mb-3">Place Order</button>
                 </div>
             </form>
         </main>
