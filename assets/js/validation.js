@@ -114,3 +114,7 @@ function submitForm() {
     localStorage.setItem("giftRecords",JSON.stringify(array))
     window.location = "viewOrders.html";
 }
+
+pinValidate(ele){
+    console.log(ele.value.length)
+}
