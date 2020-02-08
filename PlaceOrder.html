@@ -158,8 +158,9 @@
                                     </div>
                                     <div class="col">
                                         <input type="number" minlength="6" maxlength="6" class="form-control"
-                                            placeholder="Enter Pincode" id="pincode">
+                                            placeholder="Enter Pincode" id="pincode" required>
                                         <label for="pincode">Pincode</label>
+                                        <label class="text-danger text-small" id = "pinError" style="display: none;">Pin code must have 6 digits</label>
                                     </div>
                                 </div>
                             </fieldset>
@@ -212,12 +213,13 @@
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
                     </div>
-                    <button type="submit" id="placeOrderBtn" class="btn btn-primary btn-block mb-3" onclick="submitForm()">Place Order</button>
+                    <button type="submit" id="placeOrderBtn" class="btn btn-danger btn-block mb-3" onclick="submitForm()">Place Order</button>
                 </div>
             </form>
         </main>
        
     </div>
+    <script src="./assets/js/validation.js"></script>
 </body>
 </html>
 
