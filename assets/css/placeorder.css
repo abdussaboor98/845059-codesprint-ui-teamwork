@@ -8,3 +8,25 @@
 .limit-size {
     width: 1em;
 }
+
+@media (min-width: 576px) { 
+    .limit-size {
+        width: 1em;
+    }
+}
+
+@media (min-width: 768px) { 
+    .limit-size {
+        width: 1em;
+    }
+ }
+@media (min-width: 992px) {
+    .limit-size {
+        width: 1em;
+    }
+}
+@media (min-width: 1200px) {
+    .limit-size {
+        width: 1em;
+    }
+ }
